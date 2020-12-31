@@ -1,0 +1,292 @@
+/* 滚动条优化 */
+html[zhihuPlus='true'] .Favlists-items::-webkit-scrollbar,
+html[zhihuPlus='true'] .highlight pre::-webkit-scrollbar,
+html[zhihuPlus='true'] body::-webkit-scrollbar,
+html[zhihuPlus='true'] .CommentListV2::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+html[zhihuPlus='true'] .Favlists-items::-webkit-scrollbar-thumb,
+html[zhihuPlus='true'] .highlight pre::-webkit-scrollbar-thumb,
+html[zhihuPlus='true'] body::-webkit-scrollbar-thumb,
+html[zhihuPlus='true'] .CommentListV2::-webkit-scrollbar-thumb {
+  background-color: rgb(133 144 166 / 0.2);
+  transition: 0.2s;
+  border-radius: 2px;
+}
+html[zhihuPlus='true'] .Favlists-items::-webkit-scrollbar-track,
+html[zhihuPlus='true'] .highlight pre::-webkit-scrollbar-track,
+html[zhihuPlus='true'] body::-webkit-scrollbar-track,
+html[zhihuPlus='true'] .CommentListV2::-webkit-scrollbar-track {
+  background-color: rgba(0, 0, 0, 0);
+}
+html[zhihuPlus='true'] .Favlists-items::-webkit-scrollbar-thumb,
+html[zhihuPlus='true'] .highlight pre::-webkit-scrollbar-thumb,
+html[zhihuPlus='true'] body::-webkit-scrollbar-thumb,
+html[zhihuPlus='true'] .CommentListV2:hover::-webkit-scrollbar-thumb {
+  background-color: rgb(133 144 166 / 0.6);
+}
+/* 隐藏界面 */
+html[zhihuPlus='true'] .Topstory-mainColumn > .Card,
+html[zhihuPlus='true'] .SearchSideBar,
+html[zhihuPlus='true'] .SearchTabs,
+html[zhihuPlus='true'] .PostIndex-Contributions,
+html[zhihuPlus='true'] .Recommendations-Main,
+html[zhihuPlus='true'] .ColumnPageHeader,
+html[zhihuPlus='true'] .Topstory-mainColumn .TopstoryItem--advertCard,
+html[zhihuPlus='true'] .TopstoryMain .TopstoryItem--advertCard,
+html[zhihuPlus='true'] .RichText-MCNLinkCardContainer,
+html[zhihuPlus='true'] .Reward,
+html[zhihuPlus='true'] .ContentItem-meta .AuthorInfo + .Labels,
+html[zhihuPlus='true'] .QuestionHeader,
+html[zhihuPlus='true'] .Question-sideColumn,
+html[zhihuPlus='true'] .GlobalSideBar,
+html[zhihuPlus='true'] .AppHeader {
+  display: none !important;
+}
+/* 布局调整 */
+html[zhihuPlus='true'] .SearchMain,
+html[zhihuPlus='true'] .Question-mainColumn,
+html[zhihuPlus='true'] .Topstory-mainColumn {
+  margin-left: auto;
+  margin-right: auto;
+}
+/* 全局背景色 */
+html[zhihuPlus='true'] body {
+  background: #333333;
+}
+/* 卡片背景色 & 内容工具栏 */
+html[zhihuPlus='true'] .Post-content {
+  background: transparent;
+}
+html[zhihuPlus='true'] .HotListNavEditPad {
+  background: #c9cdd8;
+  border-color: #b6b8c3;
+}
+html[zhihuPlus='true'] .HotListNav-item--deleteButton {
+  background: #a4adb3;
+}
+html[zhihuPlus='true'] #TopicMain .Topic-bar,
+html[zhihuPlus='true'] .RichContent-actions.is-fixed,
+html[zhihuPlus='true'] .Post-RichTextContainer,
+html[zhihuPlus='true'] .ProfileHeader-wrapper,
+html[zhihuPlus='true'] .CommentsV2-withPagination,
+html[zhihuPlus='true'] .CommentEditorV2-inputWrap--active,
+html[zhihuPlus='true'] .CommentsV2-footer,
+html[zhihuPlus='true'] .CommentListV2-header-divider,
+html[zhihuPlus='true'] .Topbar,
+html[zhihuPlus='true'] .Modal-inner,
+html[zhihuPlus='true'] .InputLike,
+html[zhihuPlus='true'] .HotItem,
+html[zhihuPlus='true'] .HotListNav-wrapper,
+html[zhihuPlus='true'] .ContentItem-actions,
+html[zhihuPlus='true'] .Card {
+  background: #bfc2ca;
+}
+html[zhihuPlus='true'] .Post-Main .Post-Title {
+  color: #bfc2ca;
+}
+html[zhihuPlus='true'] .Post-Header {
+  margin-bottom: 20px;
+}
+html[zhihuPlus='true'] .Post-RichTextContainer {
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 8px;
+}
+html[zhihuPlus='true'] .RichContent-actions {
+  padding-left: 10px;
+}
+html[zhihuPlus='true'] .Highlight em {
+  color: #5f649c;
+}
+/* 点赞按钮 */
+html[zhihuPlus='true'] .QuestionItem-footer--writeAnswerButton,
+html[zhihuPlus='true'] .Post-SideActions button.like .Post-SideActions-icon,
+html[zhihuPlus='true'] .Tag,
+html[zhihuPlus='true'] .HotListNav-item,
+html[zhihuPlus='true'] .VoteButton {
+  background: rgb(138 138 138 / 10%);
+  color: #8590a6;
+}
+html[zhihuPlus='true'] .HotListNav-item.is-active {
+  background: rgb(32 43 74 / 10%);
+  color: #8590a6;
+}
+html[zhihuPlus='true'] .Button--blue {
+  color: #7d94a9;
+  border-color: #8fa5b9;
+}
+html[zhihuPlus='true'] .VoteButton.is-active {
+  background: rgb(51 57 125 / 10%);
+  color: #8590a6;
+}
+html[zhihuPlus='true'] .Button--primary.Button--blue {
+  background: rgb(191 194 202);
+  color: #50638a;
+}
+html[zhihuPlus='true'] .Modal-closeIcon {
+  fill: #8590a6;
+}
+html[zhihuPlus='true'] .Post-SideActions button.like {
+  color: #8590a6;
+}
+/* tab栏 & 卡片 */
+html[zhihuPlus='true'] .QuestionItem-footer--writeAnswerButton,
+html[zhihuPlus='true'] .Favlists-item,
+html[zhihuPlus='true'] .CommentsV2-pagination,
+html[zhihuPlus='true'] .CommentsV2-withPagination,
+html[zhihuPlus='true'] .CommentEditorV2-inputWrap--active,
+html[zhihuPlus='true'] .NestComment .NestComment--child:after,
+html[zhihuPlus='true'] .NestComment--rootComment:after,
+html[zhihuPlus='true'] .NestComment:not(:last-child):after,
+html[zhihuPlus='true'] .Topbar,
+html[zhihuPlus='true'] .List-item + .List-item:after,
+html[zhihuPlus='true'] .List-header,
+html[zhihuPlus='true'] .Topstory--old .HotItem:not(:first-child),
+html[zhihuPlus='true'] .Topstory--old .HotListNav,
+html[zhihuPlus='true'] .Topstory-mainColumnCard .Card:not(.Topstory-tabCard),
+html[zhihuPlus='true'] .Topstory-tabs {
+  border-color: rgb(181 185 197);
+}
+html[zhihuPlus='true'] .TopstoryTabs-link {
+  color: #8590a6;
+}
+html[zhihuPlus='true'] .TopstoryTabs-link.is-active {
+  color: #333333;
+  font-weight: 600;
+}
+/* 查看更多 */
+html[zhihuPlus='true'] .ContentItem-more {
+  color: rgb(106 114 119);
+}
+/* 卡片封面 & 标识 */
+html[zhihuPlus='true'] .css-18biwo,
+html[zhihuPlus='true'] .Avatar,
+html[zhihuPlus='true'] .HotItem-img,
+html[zhihuPlus='true'] .RichContent-cover {
+  opacity: 0.45;
+}
+/* 返回顶部按钮 */
+html[zhihuPlus='true'] .CornerButton {
+  background: #484b54;
+}
+/* 热度序号 */
+html[zhihuPlus='true'] .HotItem-hot {
+  color: #4d72ab;
+}
+html[zhihuPlus='true'] .Tabs-link.is-active:after,
+html[zhihuPlus='true'] .HotItem-label {
+  background-color: rgba(77, 114, 171, 0.48) !important;
+}
+/* 没有更多 */
+html[zhihuPlus='true'] .HotList-end {
+  color: #47494c;
+}
+html[zhihuPlus='true'] .HotList-end:after,
+html[zhihuPlus='true'] .HotList-end:before {
+  background-color: #47494c;
+}
+/* 评论输入框 */
+html[zhihuPlus='true'] .ZVideoLinkCard-info,
+html[zhihuPlus='true'] .CommentsV2-footer {
+  background-color: #b9beca;
+}
+html[zhihuPlus='true'] .CommentsV2-footer {
+  border-color: #b6b9c1;
+}
+
+html[zhihuPlus='true'] .CommentEditorV2-inputWrap {
+  border-color: #b6b9c1;
+  background-color: #b9beca;
+}
+
+/* 作者标识 */
+html[zhihuPlus='true'] .css-g9eqf4-StrutAlign,
+html[zhihuPlus='true'] .css-n99yhz,
+html[zhihuPlus='true'] .css-b12ql4 {
+  opacity: 0.65;
+}
+
+/* 评论列表优化 */
+html[zhihuPlus='true'] .CommentsV2-openComment-divider,
+html[zhihuPlus='true'] .List-headerText {
+  background-color: #bfc2ca;
+}
+html[zhihuPlus='true'] .CommentItemV2:not(:first-child):after,
+html[zhihuPlus='true'] .CommentsV2-replyNum,
+html[zhihuPlus='true'] #TopicMain .Topic-bar,
+html[zhihuPlus='true'] .ztext hr,
+html[zhihuPlus='true'] .CommentListV2-action:after,
+html[zhihuPlus='true'] .MoreAnswers .List-header:after {
+  border-color: #b6b9c1;
+}
+
+/* 话题 */
+html[zhihuPlus='true'] .ContentLayout-sideColumn .TopicSideBar .Sticky {
+  top: 10px !important;
+}
+html[zhihuPlus='true'] .ContentLayout-sideColumn .Footer {
+  display: none;
+}
+
+/* 视频下载 */
+html[zhihuPlus='true'] .RichText-ZVideoLinkCardContainer {
+  position: relative;
+}
+
+html[zhihuPlus='true'] .RichText-ZVideoLinkCardContainer .download-btn {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  font-size: 14px;
+  cursor: pointer;
+  color:#8590a6;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+}
+
+html[zhihuPlus='true'] .RichText-ZVideoLinkCardContainer .download-btn svg {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+}
+
+html[zhihuPlus='true'] .Question-mainColumn .ViewAll {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+html[zhihuPlus='true'] .Question-mainColumn .ViewAll .QuestionMainAction {
+  width: 50%;
+}
+
+html[zhihuPlus='true'] .Question-mainColumn .ViewAll #ZhihuPlusFollowButton.active {
+  border-color: #b6b9c1;
+  background-color: #b9beca;
+}
+
+/* 无图模式 */
+html[noImage='true'] .CommentItemV2-avatar,
+html[noImage='true'] .LinkCard-imageCell,
+html[noImage='true'] .RichText-video,
+html[noImage='true'] .content_image,
+html[noImage='true'] .zh-lightbox-thumb,
+html[noImage='true'] .ShareMenu-toggler,
+html[noImage='true'] .HotItem-img,
+html[noImage='true'] .css-g9eqf4-StrutAlign,
+html[noImage='true'] .FeedSource .css-n99yhz,
+html[noImage='true'] .FeedSource .css-b12ql4,
+html[noImage='true'] .FeedSource .FeedSource-labelIcon,
+html[noImage='true'] .AuthorInfo-avatarWrapper,
+html[noImage='true'] .RichContent-cover {
+  display: none !important;
+}
+html[noImage='true'] .AuthorInfo-content {
+  margin-left: 0;
+}
+html[noImage='true'] .HotItem-metrics--bottom {
+  position: static;
+}

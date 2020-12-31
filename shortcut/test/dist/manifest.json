@@ -1,0 +1,52 @@
+{
+  "manifest_version": 2,
+  "name": "Test Shortcut",
+  "version": "1.0.0",
+  "description": "Test Shortcut",
+  "browser_action": {
+    "default_icon": "./icons/64-jjj.png",
+    "default_title": "这是一个示例Chrome插件",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "./icons/16-jjj.png",
+    "64": "./icons/64-jjj.png",
+    "128": "./icons/128-jjj.png"
+  },
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "js/jquery.min.js",
+        "js/content.js"
+      ],
+      "css": [
+        "css/content.css"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "notifications",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "web_accessible_resources": [
+    "js/inject.js"
+  ],
+  "homepage_url": "https://www.huanggaofang.com",
+  "omnibox": {
+    "keyword": "go"
+  },
+  "default_locale": "zh_CN"
+}
