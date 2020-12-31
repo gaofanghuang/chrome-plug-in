@@ -1,6 +1,4 @@
-# chrome-plug-in
-
-## 1. zhihuPlus 知乎Plus Chrome浏览器扩展：
+# zhihuPlus 知乎Plus Chrome浏览器扩展：
 
 功能说明：
 

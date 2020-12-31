@@ -5,7 +5,7 @@
   "description": "Zhihu Plus",
   "browser_action": {
     "default_icon": "./icons/64-zhihu.png",
-    "default_title": "这是一个示例Chrome插件",
+    "default_title": "Zhihu Plus",
     "default_popup": "popup.html"
   },
   "icons": {
