@@ -27,6 +27,7 @@ html[zhihuPlus='true'] .CommentListV2:hover::-webkit-scrollbar-thumb {
   background-color: rgb(133 144 166 / 0.6);
 }
 /* 隐藏界面 */
+html[zhihuPlus='true'] .Pc-word,
 html[zhihuPlus='true'] .Topstory-mainColumn > .Card,
 html[zhihuPlus='true'] .SearchSideBar,
 html[zhihuPlus='true'] .SearchTabs,
