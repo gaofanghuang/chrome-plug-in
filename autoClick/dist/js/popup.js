@@ -11,6 +11,14 @@ chrome.storage.sync.get({ autoClick: false }, function (items) {
         $(this).attr("checked", "checked");
         switchPa.addClass("open");
       }
+      if (value === "listMode" && items.listMode) {
+        $(this).attr("checked", "checked");
+        switchPa.addClass("open");
+      }
+      if (value === "loopMode" && items.loopMode) {
+        $(this).attr("checked", "checked");
+        switchPa.addClass("open");
+      }
     });
   }
 });
@@ -20,9 +28,7 @@ $(function () {
   $(".switch-input").change(function () {
     let value = $(this).val();
     let isChecked = $(this).is(":checked");
-    if (value === "autoClick") {
-      sendMessageToContentScript({ cmd: "autoClick", value: isChecked });
-    }
+    sendMessageToContentScript({ cmd: value, value: isChecked });
     if (value === "listMode" && isChecked) {
       $(".add-timer").show();
     } else {
@@ -45,8 +51,8 @@ $(function () {
   });
 
   // 默认生成一个定时器
-  addTimer()
-  renderTimerList()
+  addTimer();
+  renderTimerList();
 });
 
 function addTimer() {
