@@ -1,0 +1,65 @@
+body {
+  user-select: none;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  width: 320px;
+}
+
+.list-switch,
+.switch-group,
+.master-switch {
+  display: flex;
+  align-items: center;
+}
+
+.switch-label {
+  margin-right: 4px;
+}
+
+.list-switch {
+  margin-left: 20px;
+}
+
+.timer-item-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.timer-item-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  margin-bottom: 10px;
+}
+
+.timer-item {
+  border: 1px solid #efefef;
+  width: 49%;
+  height: 28px;
+  line-height: 28px;
+  border-radius: 4px;
+  margin-right: 10px;
+  outline: none;
+  padding: 0 10px;
+  margin-right: 2%;
+  font-size: 12px;
+}
+
+.timer-item:nth-of-type(2n) {
+  margin-right: 0;
+}
+
+input.timer-item::-webkit-inner-spin-button,
+input.timer-item::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
