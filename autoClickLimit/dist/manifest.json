@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "AutoClick",
+  "name": "AutoClickLimit",
   "version": "1.0.0",
-  "description": "自动点击",
+  "description": "自动点击刷网课专用版",
   "browser_action": {
     "default_icon": "./icons/autoClick-64.png",
     "default_title": "AutoClick",
@@ -20,6 +20,7 @@
       ],
       "js": [
         "js/jquery.min.js",
+        "js/common.js",
         "js/content.js"
       ],
       "css": [

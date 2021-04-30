@@ -17,10 +17,10 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 });
 
 $(function () {
-  $("a, button").mouseover(function(){
-    $(this).addClass("highlight-block");
-  });
-  $("a, button").mouseout(function(){
-    $(this).removeClass("highlight-block");
-  });
+  // $("a, button").mouseover(function(){
+  //   $(this).addClass("highlight-block");
+  // });
+  // $("a, button").mouseout(function(){
+  //   $(this).removeClass("highlight-block");
+  // });
 });

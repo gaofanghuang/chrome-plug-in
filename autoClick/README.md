@@ -1,4 +1,4 @@
-# autoClick 自动点击网课专用
+# autoClick 自动点击
 
 功能说明：
 
