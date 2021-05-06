@@ -1,16 +1,3 @@
-$(function () {
-  // 开关动画
-  $(".switch-input").change(function () {
-    let switchPa = $(this).parent(".switch-box");
-    let isChecked = $(this).is(":checked");
-    if (isChecked) {
-      switchPa.addClass("open");
-    } else {
-      switchPa.removeClass("open");
-    }
-  });
-});
-
 // Popup 或 background 向 content 发送消息
 function sendMessageToContentScript(message, callback) {
   chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
@@ -23,3 +10,25 @@ function sendMessageToContentScript(message, callback) {
     }
   });
 }
+
+/** content 向 popup 或 background 发送消息 */
+function sendMessageToExtension(message, callback) {
+  chrome.runtime.sendMessage(message, (response) => {
+    if (chrome.runtime.lastError !== undefined) {
+      if (callback) callback(response);
+    }
+  });
+}
+
+$(() => {
+  // 开关动画
+  $(".switch-input").change(function () {
+    let switchPa = $(this).parent(".switch-box");
+    let isChecked = $(this).is(":checked");
+    if (isChecked) {
+      switchPa.addClass("open");
+    } else {
+      switchPa.removeClass("open");
+    }
+  });
+});

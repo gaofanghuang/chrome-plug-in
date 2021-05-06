@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>测试按钮页面</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .btn-list {
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+      .btn-list .btn {
+        cursor: pointer;
+        margin-bottom: 20px;
+        padding: 10px 18px;
+        border-radius: 8px;
+        border: 1px solid #eeeeee;
+        margin-right: 20px;
+        transition: 0.2s;
+        color: #666;
+      }
+      .btn-list .btn:hover {
+        border-color: #1975ff;
+        color: #1975ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="btn-list">
+      <div class="btn" id="testSingleForLoop">单点循环测试</div>
+      <div class="btn" id="testMultipleForLoop1">多点循环测试1</div>
+      <div class="btn" id="testMultipleForLoop2">多点循环测试2</div>
+      <div class="btn" id="testMultipleForLoop3">多点循环测试3</div>
+      <div class="btn" id="testMultipleForLoop4">多点循环测试4</div>
+    </div>
+  </body>
+
+  <script src="./dist/js/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $(".btn-list .btn").click(function () {
+        console.log($(this).text(), "自动点击成功", new Date().getTime());
+      });
+    });
+  </script>
+</html>
