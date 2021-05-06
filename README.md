@@ -14,6 +14,6 @@ Chrome商店地址: 暂无
 ## 2. autoClick 自动点击 Chrome浏览器扩展
 
 仓库地址：[点击查看](https://github.com/gaofanghuang/chrome-plug-in/tree/main/autoClick)
-下载源码: [点击下载](https://github.com/gaofanghuang/chrome-plug-in/tree/main/autoClick/dist)
+下载源码: [点击下载](https://github.com/gaofanghuang/chrome-plug-in/raw/main/autoClick/AutoClick.crx)
 Chrome商店地址: 暂无
 
